@@ -12,6 +12,26 @@ public class Car {
     private String driver;
     private int speed;
 
+
+
+    //   custom default constructor
+    public Car() {
+        doors = "closed";
+        engine = "off";
+        driver = "not seated";
+        speed = 0;
+    }
+
+    // parameterized constructor
+    public Car(String doors, String engine, String driver, int speed) {
+        this.doors = doors;
+        this.engine = engine;
+        this.driver = driver;
+        this.speed = speed;
+    }
+
+
+
     public String getDoors() {
         return doors;
     }
